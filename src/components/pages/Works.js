@@ -34,7 +34,7 @@ const Works = () => {
                             </div>
                             <div>
                                 <div className='project-name'>Javascript Calculator</div>
-                                <a href='' target="_blank"><img className='project-image' src='./images/web/calculator.png'></img></a>
+                                <a href='https://ztirk.github.io/Javascript-Calculator/' target="_blank"><img className='project-image' src='./images/web/calculator.png'></img></a>
                                 <div className='project-popup'>Using React, Bootstrap</div>
                             </div>
                         </div>
