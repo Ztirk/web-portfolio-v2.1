@@ -1,0 +1,60 @@
+.third-section {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(225deg, #212F3D, #17202A);
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact {
+    color: #CD6155;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+form {
+    display: grid;
+    row-gap: 20px;
+    width: 350px;
+    background-image: linear-gradient(135deg, #424949, #616A6B);
+    padding: 20px;
+    border-radius: 10px;
+    filter: drop-shadow(-1px -1px 0px black)
+            drop-shadow(5px 10px 1px black);
+
+}
+
+textarea {
+    resize: none;
+    height: 300px;
+}
+
+input, textarea {
+    padding: 5px;
+}
+
+.send {
+    text-align: center;
+}
+
+.but {
+    font-size: 1em;
+}
+
+@media (max-width: 500px) {
+    form {
+        display: grid;
+        row-gap: 20px;
+        width: 80vw;
+        background-image: linear-gradient(135deg, #424949, #616A6B);
+        padding: 20px;
+        border-radius: 10px;
+        filter: drop-shadow(-1px -1px 0px black)
+                drop-shadow(5px 10px 1px black);
+    }
+}

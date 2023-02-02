@@ -1,0 +1,220 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+
+.first-section {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: linear-gradient(45deg, #212F3D, #17202A);
+    
+}
+
+.first-section div > button {
+    text-align: center;
+}
+
+.text, .text-name {
+    filter: drop-shadow(-1px -1px 0px gray)
+            drop-shadow(1px 1px 1px black);
+    text-shadow: 1px 1px black;
+    transition: text-shadow 1s ease, transform 1s ease;
+}
+
+.text {
+    color: #C0392B; 
+    font-size: 75px;
+    text-align: right;
+
+}
+
+.haha:hover .text, .haha:hover .text-name{
+    text-shadow: 5px 5px black;
+    transform: translate(-3px, -3px);
+}
+
+.text-name span {
+    font-weight:bold;
+    color: #F6DDCC;
+    animation-name: changeColor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes changeColor {
+    0% {color: #F6DDCC;}
+    50% {color: #C0392B;}
+    100% {color: #F6DDCC;}
+}
+
+.text-name {
+    text-align: left;
+    color: #F6DDCC; 
+    font-size: 100px;
+    
+}
+
+.fk {
+    text-align: center;
+   
+}
+
+.btn {
+    font-size: 1.25em;
+    font-weight: bold;
+    
+}
+
+.animation {
+    
+}
+
+.animation:hover .i1 {
+    opacity: 100%;
+    transform: translate(0px, -400px)
+               rotate(-25deg);
+
+}
+.animation:hover .i2 {
+    opacity: 100%;
+    transform: translate(-25px, -300px)
+               rotate(-45deg);
+
+}
+.animation:hover .i3 {
+    opacity: 100%;
+    transform: translate(-50px, -200px)
+               rotate(-35deg);
+
+}
+.animation:hover .i4 {
+    opacity: 100%;
+    transform: translate(250px, -375px)
+               rotate(25deg);
+
+}
+
+.animation:hover .i5 {
+    opacity: 100%;
+    transform: translate(300px, -250px)
+               rotate(35deg);
+
+}
+
+.photo-of-me {
+    transition: transform;
+    transition-duration: .75s;
+    transition-timing-function: ease;
+    filter: drop-shadow(10px 6px 3px #000000)
+            drop-shadow(-1px -1px 0 #000000);
+    height: 50vh;
+    z-index: 999;
+}
+
+.photo-of-me:hover {
+    transform: rotateY(360deg);
+    
+}
+
+.i1, .i2, .i3, .i4, .i5 {
+    z-index: -1;
+    position: absolute;
+    height: 50px;
+    transform: translate(100px, -200px);
+    opacity: 0%;
+    transition: transform 1s ease, opacity 1s ease;
+    filter: drop-shadow(-1px -1px 0 black)
+            drop-shadow(1px 1px 0 black);
+
+}
+
+.animation:hover .arrow, .animation:hover .point {
+    opacity: 0%;
+
+}
+
+/* .arrow {
+    position:absolute;
+    transform: rotateY(180deg)
+               rotateZ(150deg)
+               translate(-250px, -125px);
+    height: 80px;
+    transition: opacity 1s ease;
+    color: #F4D03F;
+    filter: 
+            drop-shadow(-1px -1px 0 #424949)
+            drop-shadow(1px 1px 1px #424949);
+
+} */
+
+.point {
+    background-color: aliceblue;
+    transition: opacity .5s ease;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    margin: auto;
+}
+
+@media (max-width: 800px) {
+    .text, .text-name {
+        filter: drop-shadow(-1px -1px 0px gray)
+                drop-shadow(1px 1px 1px black);
+        text-shadow: 1px 1px black;
+        transition: text-shadow 1s ease, transform 1s ease;
+        font-size: 4em;
+    }
+
+    .animation:hover .i4 {
+        opacity: 100%;
+        transform: translate(200px, -375px)
+                   rotate(25deg);
+    
+    }
+    
+    .animation:hover .i5 {
+        opacity: 100%;
+        transform: translate(250px, -250px)
+                   rotate(35deg);
+    
+    }
+}
+
+@media (max-width: 500px) {
+    .text, .text-name {
+        filter: drop-shadow(-1px -1px 0px gray)
+                drop-shadow(1px 1px 1px black);
+        text-shadow: 1px 1px black;
+        transition: text-shadow 1s ease, transform 1s ease;
+        font-size: 3em;
+    }
+
+    .photo-of-me {
+        transition: transform;
+        transition-duration: .75s;
+        transition-timing-function: ease;
+        filter: drop-shadow(10px 6px 3px #000000)
+                drop-shadow(-1px -1px 0 #000000);
+        height: 50vh;
+        z-index: 999;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .text-container {
+        margin-top: 60px;
+    }
+}
+
